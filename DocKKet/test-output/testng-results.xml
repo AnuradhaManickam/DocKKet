@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-25T18:58:41 IST" name="Suite" finished-at="2021-11-25T19:01:58 IST" duration-ms="196999">
+    <groups>
+    </groups>
+    <test started-at="2021-11-25T18:58:41 IST" name="SmokeTest" finished-at="2021-11-25T19:01:58 IST" duration-ms="196999">
+      <class name="com.Dockket.Testcases.LoginTest">
+        <test-method signature="LoginFunctionality()[pri:2, instance:com.Dockket.Testcases.LoginTest@32ee6fee]" started-at="2021-11-25T18:59:05 IST" name="LoginFunctionality" finished-at="2021-11-25T18:59:11 IST" duration-ms="6097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFunctionality -->
+      </class> <!-- com.Dockket.Testcases.LoginTest -->
+      <class name="com.Dockket.Testcases.SplashTest">
+        <test-method signature="splashFunctionality()[pri:1, instance:com.Dockket.Testcases.SplashTest@49c7b90e]" started-at="2021-11-25T18:58:41 IST" name="splashFunctionality" finished-at="2021-11-25T18:59:05 IST" duration-ms="23418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- splashFunctionality -->
+      </class> <!-- com.Dockket.Testcases.SplashTest -->
+      <class name="com.Dockket.Testcases.DeliveryNoteTest">
+        <test-method signature="newDocumemntTest()[pri:7, instance:com.Dockket.Testcases.DeliveryNoteTest@47faa49c]" started-at="2021-11-25T19:00:36 IST" name="newDocumemntTest" description="Verify that the user is able to add new deliverynote document" finished-at="2021-11-25T19:01:20 IST" duration-ms="43606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newDocumemntTest -->
+      </class> <!-- com.Dockket.Testcases.DeliveryNoteTest -->
+      <class name="com.Dockket.Testcases.RecordPaymentTest">
+        <test-method signature="newDocumemntTest()[pri:9, instance:com.Dockket.Testcases.RecordPaymentTest@7fee8714]" started-at="2021-11-25T19:01:33 IST" name="newDocumemntTest" description="Verify that the user is able to add new RecordPayment document" finished-at="2021-11-25T19:01:58 IST" duration-ms="25205" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[@text='Amount']})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[@text='Amount']})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.Dockket.Functions.RecordPaymentFunction.RecordPaymentFunctionality(RecordPaymentFunction.java:34)
+at com.Dockket.Testcases.RecordPaymentTest.newDocumemntTest(RecordPaymentTest.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@44b18fe4 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.EditText[@text='Amount']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EM7U3K2', ip: '172.29.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: AppiumDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newDocumemntTest -->
+      </class> <!-- com.Dockket.Testcases.RecordPaymentTest -->
+      <class name="com.Dockket.Testcases.StaffTest">
+        <test-method signature="addStaffScreenTest()[pri:5, instance:com.Dockket.Testcases.StaffTest@3232a28a]" started-at="2021-11-25T18:59:50 IST" name="addStaffScreenTest" description="Verify that a user can add staff usinfg valid credentials" finished-at="2021-11-25T19:00:04 IST" duration-ms="13529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStaffScreenTest -->
+      </class> <!-- com.Dockket.Testcases.StaffTest -->
+      <class name="com.Dockket.Testcases.HomeTest">
+        <test-method signature="homeScreenTests()[pri:3, instance:com.Dockket.Testcases.HomeTest@4d0f2471]" started-at="2021-11-25T18:59:11 IST" name="homeScreenTests" description="Verify that a user can create a company and site using valid Data" finished-at="2021-11-25T18:59:18 IST" duration-ms="7567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeScreenTests -->
+      </class> <!-- com.Dockket.Testcases.HomeTest -->
+      <class name="com.Dockket.Testcases.SiteTest">
+        <test-method signature="addSiteScreenTests()[pri:4, instance:com.Dockket.Testcases.SiteTest@7133da86]" started-at="2021-11-25T18:59:19 IST" name="addSiteScreenTests" description="Verify that a user can create Site using valid Data" finished-at="2021-11-25T18:59:50 IST" duration-ms="31990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSiteScreenTests -->
+      </class> <!-- com.Dockket.Testcases.SiteTest -->
+      <class name="com.Dockket.Testcases.SupplierTest">
+        <test-method signature="addSupplierScreenTests()[pri:6, instance:com.Dockket.Testcases.SupplierTest@73e22a3d]" started-at="2021-11-25T19:00:04 IST" name="addSupplierScreenTests" description="Verify that a user is able to create supplier using valid Data" finished-at="2021-11-25T19:00:36 IST" duration-ms="31978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSupplierScreenTests -->
+      </class> <!-- com.Dockket.Testcases.SupplierTest -->
+      <class name="com.Dockket.Testcases.TaxTest">
+        <test-method signature="AddTaxTest()[pri:8, instance:com.Dockket.Testcases.TaxTest@6da21078]" started-at="2021-11-25T19:01:20 IST" name="AddTaxTest" description="Verify that the user is able to add Tax" finished-at="2021-11-25T19:01:33 IST" duration-ms="13527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddTaxTest -->
+      </class> <!-- com.Dockket.Testcases.TaxTest -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
